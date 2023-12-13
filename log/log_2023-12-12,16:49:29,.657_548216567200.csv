@@ -1,0 +1,33 @@
+2023-12-12,16:49:29,.657: System started.
+2023-12-12,16:49:29,.676: Started Logging Endocam
+2023-12-12,16:49:29,.678: Using /dev/video0
+
+2023-12-12,16:49:29,.678: Using camera:/dev/video0
+2023-12-12,16:49:29,.735: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-12,16:49:29,.941: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-12,16:49:30,.564: Lv Pipeline : Pipeline status changed to paused
+
+2023-12-12,16:49:31,.596: LiveViewGstPipeline::Play one and drop other
+
+2023-12-12,16:49:31,.654: Lock file does not exist.
+
+2023-12-12,16:49:31,.655: Lock file does not exist.
+
+2023-12-12,16:49:31,.802: Lv pipeline : Releasing pipeline...
+2023-12-12,16:49:31,.826: Lv Pipeline : Running free sync
+2023-12-12,16:49:33,.828: Lv Pipeline : Running free sync
+2023-12-12,16:49:34,.028: Lv Pipeline : Running free sync
+2023-12-12,16:49:34,.028: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-12,16:49:34,.100: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-12,16:49:34,.100: Lv Pipeline : Pipeline status changed to play
+
+2023-12-12,16:49:34,.464: LiveViewGstPipeline::Play one and drop other
+
+2023-12-12,16:49:39,.886: LiveViewGstPipeline::Play one and drop other
+
+2023-12-12,16:49:40,.866: LiveViewGstPipeline::Play one and drop other
+
+2023-12-12,16:49:54,.721: LiveViewGstPipeline::Play one and drop other
+
+2023-12-12,16:50:02,.769: LiveViewGstPipeline::Play one and drop other
+

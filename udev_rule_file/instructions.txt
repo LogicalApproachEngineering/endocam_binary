@@ -1,0 +1,4 @@
+Drop/copy the file "98-test.rules" into the folder /etc/udev/rules.d/
+Then run the command "sudo restart udev"
+
+This task is only done once.

@@ -1,0 +1,83 @@
+2023-12-07,11:52:51,.577: System started.
+2023-12-07,11:52:51,.600: Started Logging Endocam
+2023-12-07,11:52:51,.601: Using /dev/video0
+
+2023-12-07,11:52:51,.602: Using camera:/dev/video0
+2023-12-07,11:52:51,.987: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-07,11:52:52,.079: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-07,11:52:52,.642: Lv Pipeline : Pipeline status changed to paused
+
+2023-12-07,11:52:53,.670: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:52:53,.719: Lock file does not exist.
+
+2023-12-07,11:52:53,.719: Lock file does not exist.
+
+2023-12-07,11:52:53,.985: Lv pipeline : Releasing pipeline...
+2023-12-07,11:52:54,.005: Lv Pipeline : Running free sync
+2023-12-07,11:52:56,.007: Lv Pipeline : Running free sync
+2023-12-07,11:52:56,.193: Lv Pipeline : Running free sync
+2023-12-07,11:52:56,.193: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-07,11:52:56,.200: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-07,11:52:56,.200: Lv Pipeline : Pipeline status changed to play
+
+2023-12-07,11:52:56,.568: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:52:59,.883: Lv pipeline : Releasing pipeline...
+2023-12-07,11:52:59,.962: Lv Pipeline : Running free sync
+2023-12-07,11:53:01,.967: Lv Pipeline : Running free sync
+2023-12-07,11:53:11,.226: Lv Pipeline : Running free sync
+2023-12-07,11:53:11,.226: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-07,11:53:11,.251: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-07,11:53:11,.251: Lv Pipeline : Pipeline status changed to play
+
+2023-12-07,11:53:11,.610: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:53:21,.884: Lv pipeline : Releasing pipeline...
+2023-12-07,11:53:21,.943: Lv Pipeline : Running free sync
+2023-12-07,11:53:23,.950: Lv Pipeline : Running free sync
+2023-12-07,11:53:33,.228: Lv Pipeline : Running free sync
+2023-12-07,11:53:33,.228: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-07,11:53:33,.252: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-07,11:53:33,.252: Lv Pipeline : Pipeline status changed to play
+
+2023-12-07,11:53:33,.599: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:53:33,.728: show keyboard
+2023-12-07,11:53:38,.328: hide_keyboard
+2023-12-07,11:53:40,.346: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:54:00,.288: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:54:19,.900: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:54:35,.978: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:54:42,.953: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:55:00,.233: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:55:05,.381: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:55:09,.831: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:55:24,.448: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:55:44,.919: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:56:00,.448: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:56:25,.884: Lv pipeline : Releasing pipeline...
+2023-12-07,11:56:25,.997: Lv Pipeline : Running free sync
+2023-12-07,11:56:28,.002: Lv Pipeline : Running free sync
+2023-12-07,11:56:37,.314: Lv Pipeline : Running free sync
+2023-12-07,11:56:37,.315: v4l2src name=src device=/dev/video0 do-timestamp=true ! nvvidconv ! video/x-raw(memory:NVMM), format=(string)NV12 ! nvivafilter name=mask pre-process=false post-process=false customer-lib-name="./src/libnvsample_cudaprocess.so" ! video/x-raw(memory:NVMM), format=(string)RGBA ! nvcompositor sink_0::alpha=1 sink_1::alpha=1 ! nvvidconv name=l_rotate ! nvjpegenc ! image/jpeg, width=400, height=400, framerate=30/1 ! tee name=t ! queue ! nvjpegdec ! tee name=rawtee ! valve name=live_valve ! queue ! nvoverlaysink overlay=1 overlay-depth=1 overlay-x=326 overlay-y=31 overlay-w=682 overlay-h=657 sync=false name=sink t. ! queue name=queue_capture  ! videorate ! image/jpeg, framerate=2/1 ! appsink name=app_sink
+2023-12-07,11:56:37,.340: Lv Pipeline : pipeline GST_STATE_READY
+2023-12-07,11:56:37,.340: Lv Pipeline : Pipeline status changed to play
+
+2023-12-07,11:56:37,.689: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:56:46,.553: LiveViewGstPipeline::Play one and drop other
+
+2023-12-07,11:56:54,.905: LiveViewGstPipeline::Play one and drop other
+
