@@ -1,0 +1,486 @@
+.prg_label {
+	color: white;
+	background: black;
+	border-radius: 7px;
+	/*text-align: center;*/
+	font-size: 14px;
+	padding: 3px;
+	font-family: "Arial Narrow", Arial, serif;
+}
+
+.time_label {
+	color: white;
+	background: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Arial Narrow", Arial, serif;
+}
+
+.name_edittxt {
+	color: white;
+	background: black;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 7px 5px 8px 5px;
+	font-family: "Arial Narrow", Arial, serif;
+}
+
+.name_edittxt:focus {
+	border: 1px solid white;
+}
+
+.kb_layout {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.kb_edittxt {
+	opacity: 1.0;
+	color: black;
+	background: white;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 7px 5px 8px 5px;
+	font-family: "Arial Narrow", Arial, serif;
+	border: 1px solid white;
+}
+
+.kb_keyBtn {
+	opacity: 1.0;
+	color: white;
+	background: black;
+	border-radius: 1px;
+	border: 1px solid white;
+	font-size: 16px;
+	font-family: "Arial", Arial, serif;
+}
+
+.kb_keyBtn:active {
+	opacity: 1.0;
+	color: black;
+	background: white;
+	border-radius: 1px;
+	border: 1px solid black;
+}
+
+.scale.trough.vertical {
+	border: 0px;
+	background: transparent;
+}
+
+.scale.trough.highlight {
+	background: transparent;
+}
+
+GtkWidget {
+	box-shadow: none;
+	transition: none;
+}
+
+GtkWidget:hover {
+	border-color: white;
+}
+
+GtkWidget:active {
+	border-color: white;
+}
+
+GtkScale.vertical {
+	-GtkRange-slider-width: 32px;
+	-GtkScale-slider-length: 32px;
+	-GtkRange-trough-border: 0;
+}
+
+.slider, .slider:hover, .slider:disabled {
+	border-radius: 0;
+	border-style: none;
+	background-color: transparent;
+}
+
+GtkScale.trough.vertical {
+	margin: 0 8px;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.ledSlider slider {
+	background-image: url("../images/slider-front.png");
+	background-size: contain;
+	box-shadow: none; 
+	border-style: none;
+}
+
+.ledSlider-backImage {
+	background-image: url("../images/slider-back.png");
+	background-repeat: no-repeat;
+	background-position: 15px 42px;
+}
+
+.commonSlider slider {
+	background-image: url("../images/slider-front-1.png");
+	background-size: contain;
+	box-shadow: none; 
+	border-style: none;
+}
+
+.settingsBG {
+	background-image: url("../images/SetupScreenBg.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.logo {
+	background-image: url("../images/EP_logo.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.logoImg {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* .target {
+	background: url("../images/Target Like Sign.png") no-repeat center;
+}
+
+.gain {
+	background: url("../images/Gain - Setting.png") no-repeat center;
+}
+
+.gaussian {
+	background: url("../images/Gaussian Curve.png") no-repeat center;
+} */
+
+.liveArrowBtn {
+	background: url("../images/Live Arrow-Large.png") no-repeat center;
+}
+
+.liveArrowUsrStgBtn {
+	background: url("../images/Live Arrow-Large.png") no-repeat center;
+}
+
+.liveArrowGalleryBtn {
+	background: url("../images/Live Arrow-Small.png") no-repeat center;
+}
+
+.cornerMaskBtn {
+	background: url("../images/Corner Mask.png") no-repeat center;
+	background-size: 60px 60px;
+}
+
+.circleMaskBtn {
+	background: url("../images/Circle Mask.png") no-repeat center;
+	background-size: 60px 60px;
+}
+
+.squareMaskBtn {
+	background: url("../images/Square Mask.png") no-repeat center;
+	background-size: 60px 60px;
+}
+
+.cornerMaskBtn, .circleMaskBtn, .squareMaskBtn {
+	box-shadow: none;
+	transition: none;
+	border: none;
+	outline: none;
+}
+
+.toggleButton {
+	color: white;
+	background: black;
+	border-radius: 8px;
+	border: none;
+	padding: 7px 5px 8px 5px;
+	font-family: "Arial Narrow", Arial, serif;
+	font-size: 18px;
+}
+
+.toggleButtonSel {
+	border: 4px solid white;
+}
+.toggleButtonDis {
+	background: gray;
+}
+
+.thumbImgBtn {
+	padding: 0px;
+}
+
+.liveVidBG {
+	background-image: url("../images/Live Screen Bg.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.recordBtn {
+	background: url("../images/Record Video_Standard.png") no-repeat center;
+}
+
+.recordBtnSel {
+	background: url("../images/Stop Video_Selected.png") no-repeat center;
+}
+
+.captureBtn {
+	background: url("../images/CaptureStillImage.png") no-repeat center;
+}
+
+.rotateVidBtn {
+	background: url("../images/Rotate Image-Circle.png") no-repeat center;
+}
+
+.zoomBtn {
+	background: url("../images/Zoom Image.png") no-repeat center;
+}
+
+.ejectBtn {
+	background: url("../images/Eject.png") no-repeat center;
+}
+
+.settingsBtn {
+	background: url("../images/Settings Icon.png") no-repeat center;
+}
+
+.leftArrowBtn {
+	background: url("../images/LeftArrow.png") no-repeat center;
+}
+
+.rightArrowBtn {
+	background: url("../images/RightArrow.png") no-repeat center;
+}
+
+.galleryBtn {
+	background: url("../images/GalleryBtn.png") no-repeat center;
+}
+
+.noUSB {
+	background-image: url("../images/No USB.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.presetNameEntry {
+	font-size: 24px;
+}
+
+.galleryBG {
+	background-image: url("../images/GalleryBG.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.reviewBG {
+	background-image: url("../images/ReviewBG.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.playBtn {
+	background: url("../images/PlayBtn.png") no-repeat center;
+}
+
+.pauseBtn {
+	background: url("../images/PauseBtn.png") no-repeat center;
+}
+
+.stopBtn {
+	background: url("../images/Stop Video_Standard.png") no-repeat center;
+}
+
+.trashBtn {
+	background: url("../images/TrashBtn.png") no-repeat center;
+}
+
+.gallerySmallBtn {
+	background: url("../images/GalleryBtnSmall.png") no-repeat center;
+}
+
+.upThinBtn {
+	background: url("../images/Arrow-1.png") no-repeat center;
+}
+
+.downThinBtn {
+	background: url("../images/Arrow-1-down.png") no-repeat center;
+}
+
+.upFatBtn {
+	background: url("../images/UpArrowFat.png") no-repeat center;
+}
+
+.downFatBtn {
+	background: url("../images/DownArrowFat.png") no-repeat center;
+}
+
+.DownArrowNONActive {
+	background: url("../images/DownArrowNON-Active.png") no-repeat center;
+}
+
+.UpArrowNONActive {
+	background: url("../images/UpArrowNONActive.png") no-repeat center;
+}
+
+.DownArrowNONActive, .UpArrowNONActive {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	transition: none;
+}
+
+.DownArrowNONActive:active:hover, .UpArrowNONActive:active:hover {
+	border: none;
+}
+
+.DownArrowActive {
+	background: url("../images/DownArrowActive.png") no-repeat center;
+}
+
+.UpArrowActive {
+	background: url("../images/UpArrowActive.png") no-repeat center;
+}
+
+.userSettingBG {
+	background-image: url("../images/UserSettingsBG.png");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.date_label {
+	color: white;
+	background: black;
+	border-radius: 12px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px 10px 8px 10px;
+	font-family: "Arial", Arial, serif;
+}
+
+.emptyGalleryThumb, .emptyGalleryThumb:active, .emptyGalleryThumb:active:hover,
+	.emptyGalleryThumb:focus {
+	background: transparent;
+	border: none;
+}
+
+.pixLabel2
+.recordBtn, .recordBtnSel, .captureBtn, .rotateVidBtn, .zoomBtn,
+	.ejectBtn, .settingsBtn, .upFatBtn, .downFatBtn, .DownArrowActive,
+	.UpArrowActive, .arrowBtn {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	transition: none;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.trashBtn:hover, .playBtn:hover, .stopBtn:hover, .recordBtn:hover {
+	border: none;
+}
+
+.recordBtn:active, .recordBtnSel:active, .captureBtn:active,
+	.rotateVidBtn:active, .zoomBtn:active, .ejectBtn:active,
+	.settingsBtn:active, .upFatBtn:active, .downFatBtn:active,
+	.DownArrowActive:active, .UpArrowActive:active, .arrowBtn:active,
+	.trashBtn:active, .playBtn:active, .stopBtn:active {
+	border: 1px solid white;
+}
+
+.genericBtn {
+	opacity: 1.0;
+	color: white;
+	background: black;
+	border-radius: 8px;
+	border: none;
+	font-size: 18px;
+	font-family: "Arial", Arial, serif;
+}
+
+.genericBtn:active {
+	opacity: 1.0;
+	color: black;
+	background: white;
+	border-radius: 8px;
+	border: none;
+}
+.genericBtn:disabled {
+	opacity: 1.0;
+	color: white;
+	background: gray;
+	border-radius: 8px;
+	border: none;
+}
+
+.selectedFileLbl {
+	color: black;
+	background: white;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 7px 5px 8px 5px;
+	font-family: "Arial Narrow", Arial, serif;
+}
+
+.selectedFileLbl.overshoot {
+	color: grey;
+}
+
+.selectedFileLbl.undershoot {
+	color: white;
+}
+
+.listFrame {
+	background: #333333;
+	border-radius: 8px;
+}
+
+.fileTitleLbl {
+	background: grey;
+	color: white;
+	font-size: 16px;
+	font-family: "Arial Narrow", Arial, serif;
+	border: 1px solid black;
+	font-style: oblique;
+	font-weight: bold;
+	border-radius: 8px 8px 0px 0px
+}
+
+.listFileEmpty {
+	color: white;
+	font-size: 18px;
+	font-family: "Arial Narrow", Arial, serif;
+	font-style: oblique;
+}
+
+.tableDiv, .tableDiv:hover {
+	color: black;
+	background: white;
+	font-size: 20px;
+	font-family: "Arial Narrow", Arial, serif;
+	font-weight: bold;
+	border: 1px solid black;
+}
+
+.tableDiv:active, .tableDiv:focus {
+	color: white;
+	background: black;
+	border: 1px solid white;
+}
+
+.messageDlgBox, .confirmMsgDlgBox {
+	background-image: url("../images/Message.png");
+}
+
+.bigMessageDlgBox {
+	background-image: url("../images/BigMessage.png");
+}
+.messageDlgLbl,.bigMessageDlgLbl, .notifyDlgLbl, .confirmDlgLbl {
+	color: white;
+	font-size: 16px;
+	font-family: "Arial Narrow", Arial, serif;
+}
+
+.notifyMsgDlgBox {
+	background-image: url("../images/Notification.png");
+}
+
+scale trough {
+	border: 0;
+	border-radius: 0;
+}

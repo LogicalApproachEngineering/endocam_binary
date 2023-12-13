@@ -1,0 +1,10 @@
+ACTION=="add", \
+SUBSYSTEM=="input", \
+ENV{PRODUCT}="3/a16/fa11/*" \
+RUN+="/bin/bash -c 'echo -n 1 > /tmp/cam.status'"
+
+ACTION=="remove", \
+SUBSYSTEM=="input", \
+ENV{PRODUCT}="3/a16/fa11/*" \
+RUN+="/bin/bash -c 'echo -n 0 > /tmp/cam.status'"
+

@@ -1,0 +1,17 @@
+*/*.o
+*.log
+*.status
+stamp-h1 config.h
+.deps
+*~
+.anjuta_sym_db.db
+/Debug/
+/UT_Debug/
+UnitTest/
+autom4te.cache/
+bin/
+test/tmp
+/Release/ 
+.vscode/
+log/
+config/
